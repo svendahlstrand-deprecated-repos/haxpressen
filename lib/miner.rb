@@ -1,8 +1,3 @@
-require 'open-uri'
-require 'nokogiri'
-
-require_relative 'entry'
-
 # Datamining for hackernytt.se
 module Miner
   ROOT_URL = 'http://hackernytt.se/nya'

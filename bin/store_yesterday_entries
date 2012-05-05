@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/miner'
+require_relative '../lib/haxpressen'
 
 yesterday = Date.today - 1
 

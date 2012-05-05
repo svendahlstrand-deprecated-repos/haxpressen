@@ -1,3 +1,3 @@
-require './lib/haxpressen'
+require './app'
 
-run Haxpressen.new
+run App.new
