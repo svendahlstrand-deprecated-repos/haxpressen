@@ -5,7 +5,7 @@ require 'rack'
 
 require_relative 'entry'
 
-class RssTest
+class Haxpressen
   def call(env)
     [200, {'Content-Type' => 'application/rss+xml'}, [xml]]
   end

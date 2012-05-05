@@ -1,3 +1,3 @@
-require './rss'
+require './lib/haxpressen'
 
-run RssTest.new
+run Haxpressen.new

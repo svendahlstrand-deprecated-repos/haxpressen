@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/miner'
+
+yesterday = Date.today - 1
+
+Miner.store_entries_from yesterday
