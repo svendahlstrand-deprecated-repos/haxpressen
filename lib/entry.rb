@@ -1,4 +1,4 @@
-# Represents an entry on HN
+# Represents a single entry on Hackernytt
 class Entry
   include Mongoid::Document
 

@@ -2,6 +2,8 @@
 
 require_relative 'lib/haxpressen'
 
+# Simple rack app that shows a RSS feed with a daily summary
+# of Hackernytt articles.
 class App
   def call(env)
     [200, {'Content-Type' => 'application/rss+xml'}, [xml]]
@@ -9,6 +11,8 @@ class App
 
   private
 
+  # A summary for a specified day. Get the top 5 articles by most points.
+  # The summary is a presented in a HTML list.
   def summary_for(day)
     entries = Entry.where(date: day).order_by([:points, :desc]).limit(5)
 
@@ -23,6 +27,7 @@ class App
     end
   end
 
+  # Returns an array with the ten last days.
   def last_ten_days
     today = Date.today
 
@@ -31,6 +36,7 @@ class App
     end
   end
 
+  # The xml (RSS feed) for the ten last days.
   def xml
     xml = Builder::XmlMarkup.new(indent: 2)
 

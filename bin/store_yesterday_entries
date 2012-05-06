@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# This simple script stores yesterdays entries on Hackernytt. Add it as
+# a cron job running every night.
+
 require_relative '../lib/haxpressen'
 
 yesterday = Date.today - 1

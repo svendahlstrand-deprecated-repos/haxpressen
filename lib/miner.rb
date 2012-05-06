@@ -1,4 +1,8 @@
-# Datamining for hackernytt.se
+# Data mining for hackernytt.se.
+#
+# Example usage:
+#
+#     Miner.store_entries_from Date.today - 1
 module Miner
   ROOT_URL = 'http://hackernytt.se/nya'
 
