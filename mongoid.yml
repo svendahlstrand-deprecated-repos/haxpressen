@@ -1,0 +1,5 @@
+production:
+  database: haxpressen
+
+development:
+  database: haxpressen_development

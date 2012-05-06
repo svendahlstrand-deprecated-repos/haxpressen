@@ -1,7 +1,3 @@
-Mongoid.configure do |config|
-  config.master = Mongo::Connection.new.db('haxpressen')
-end
-
 # Represents an entry on HN
 class Entry
   include Mongoid::Document
